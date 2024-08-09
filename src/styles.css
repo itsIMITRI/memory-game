@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 12px;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 8px;
+  height: 12px;
+  width: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.front {
+  backface-visibility: hidden;
+}
+
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.cardFlip {
+  transform: rotateY(180deg);
+}
